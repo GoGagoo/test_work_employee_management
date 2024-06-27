@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import EmployeeForm from './EmployeeForm'
+import EmployeeForm from '../EmployeeForm/EmployeeForm'
 
 const EmployeeDetails = () => {
 	const { id } = useParams()

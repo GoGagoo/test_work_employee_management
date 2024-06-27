@@ -1,0 +1,30 @@
+.form {
+	border: 2px solid #333;
+	border-radius: 10px;
+	padding: 40px;
+}
+
+.form_title {
+	color: #333;
+	margin-top: 0px;
+}
+
+.form_input {
+	margin-left: 10px;
+}
+
+.form_btn {
+	justify-content: center;
+	text-align: center;
+	width: 800px;
+	margin: auto;
+	padding: 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #0056b3;
+	}
+}
