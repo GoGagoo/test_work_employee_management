@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { filterEmployees, sortEmployees } from '../employeesSlice'
-import './EmployeesList.css'
+import './EmployeesList.scss'
 
 const EmployeesList = () => {
   const dispatch = useDispatch()

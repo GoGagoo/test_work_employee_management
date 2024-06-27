@@ -2,6 +2,8 @@
 	border: 2px solid #333;
 	border-radius: 10px;
 	padding: 40px;
+	display: flex;
+	flex-direction: column;
 }
 
 .form_title {
@@ -9,15 +11,24 @@
 	margin-top: 0px;
 }
 
+.from_label {
+	margin-bottom: 10px;
+}
+
 .form_input {
 	margin-left: 10px;
+}
+
+.form_input .from_label {
+	margin-bottom: 10px;
+	padding: 5px;
 }
 
 .form_btn {
 	justify-content: center;
 	text-align: center;
 	width: 800px;
-	margin: auto;
+	margin: 0 20px 0 20px;
 	padding: 10px;
 	background-color: #007bff;
 	color: white;
@@ -26,5 +37,24 @@
 
 	&:hover {
 		background-color: #0056b3;
+	}
+}
+
+@media (max-width: 770px) {
+	.form {
+		padding: 30px;
+	}
+
+	.form_title {
+		font-size: 22px;
+	}
+
+	.from_label {
+		font-size: 12px;
+	}
+
+	.form_btn {
+		width: 250px;
+		margin: 0;
 	}
 }

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
 import { addEmployee, updateEmployee } from '../employeesSlice'
-import './EmployeeForm.css'
+import './EmployeeForm.scss'
 
 const EmployeeForm = () => {
   const { id } = useParams()
@@ -37,7 +37,7 @@ const EmployeeForm = () => {
   return (
     <form className='form' onSubmit={handleSubmit}>
       <h1 className='form_title'>Создание сотрудника</h1>
-      <label>
+      <label className='from_label'>
         Имя:
         <input
           type='text'
@@ -48,7 +48,7 @@ const EmployeeForm = () => {
           required
         />
       </label>
-      <label>
+      <label className='from_label'>
         Телефон:
         <input
           type='text'
@@ -59,7 +59,7 @@ const EmployeeForm = () => {
           required
         />
       </label>
-      <label>
+      <label className='from_label'>
         Дата рождения:
         <input
           type='text'
@@ -70,7 +70,7 @@ const EmployeeForm = () => {
           required
         />
       </label>
-      <label>
+      <label className='from_label'>
         Должность:
         <select
           name='position'
@@ -85,7 +85,7 @@ const EmployeeForm = () => {
           <option value='Водитель'>Водитель</option>
         </select>
       </label>
-      <label>
+      <label className='from_label'>
         <input
           type='checkbox'
           name='archived'

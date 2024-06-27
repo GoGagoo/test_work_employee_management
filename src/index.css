@@ -5,19 +5,14 @@ body {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-
-  label {
-    margin-bottom: 10px;
-  }
-
   input, select {
     margin-bottom: 10px;
     padding: 5px;
   }
+}
 
-  button {
-    
+@media (max-width: 770px) {
+  body {
+    margin: 10px;
   }
 }

@@ -115,3 +115,29 @@
     border-right: none;
   }
 }
+
+@media (max-width: 770px) {
+  .breadcrumb {
+    margin-top: 20px;
+  }
+
+	.breadcrumb_main_title {
+    font-size: 24px;
+  }
+
+  .breadcrumb_btn {
+    font-size: small;
+  }
+
+  .tabs {
+    margin-top: 40px;
+  }
+
+  .prof_select {
+    width: 140px;
+  }
+
+  .archive_item {
+    margin-left: -10px;
+  }
+}
